@@ -1,9 +1,10 @@
 html, body {
+    min-width: 1200px;
     height: 100%;
     margin: 0;
     font-family: "Nanum Gothic", dotum;
-    font-size: 10px;
-    overflow-x: hidden;
+    font-size: 14px;
+    overflow-x: auto;
     color: #555;
 }
 
@@ -29,6 +30,9 @@ a {
 
 .button {
     display: inline-block;
+    padding: 15px 30px;
+    color: white;
+    border-radius: 10px;
 }
 .button.green {
     background-color: #1e9e6b;
@@ -39,56 +43,32 @@ a {
 
 nav {
     position: relative;
-    width: 100%;
+    display: grid;
+    grid-template-columns: 245px auto;
+    max-width: 1200px;
     height: 80px;
-}
-nav .nav-background-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 80px;
-    background-color: white;
-    z-index: 1;
-    overflow: hidden;
-}
-nav .nav-background {
-    width: 100%;
-}
-nav .nav-left,
-nav .nav-right {
-    position: absolute;
-    width: 100%;
-    z-index: 1;
-}
-nav .nav-right {
-    right: 0;
-    width: 800px;
-}
-nav .nav-left .logo-wrapper {
-    width: 100%;
-    max-width: 1920px;
     margin: 0 auto;
-    margin-top: 10px;
-    padding: 0 100px;
-}
-nav .nav-left .logo-wrapper a {
-    display: inline-block;
 }
 nav .nav-left .logo-wrapper img {
     height: 62px;
+    margin-top: 5px;
+}
+nav .nav-right {
+    justify-self: end;
 }
 nav .nav-right .menu-button {
     display: none;
 }
 nav .nav-right .menu-wrapper {
     margin: 30px auto 0 auto;
-    padding: 0 100px;
+    padding: 0;
     float: right;
     list-style: none;
 }
 nav .nav-right .menu-wrapper > li {
     display: inline-block;
     margin: 0 50px;
-    font-size: 2em;
+    font-size: 1.2em;
     cursor: pointer;
 }
 nav .nav-right .menu-wrapper > li.active {
@@ -103,34 +83,56 @@ nav.subpage .nav-right .menu-wrapper > li {
 
 header {
     position: relative;
+    display: grid;
+    width: 100%;
+    height: 400px;
+    grid-template-columns: 1fr 1fr;
     background-image: url(image/mathew-schwartz-01hH6y7oZFk-unsplash.jpg);
     background-size: cover;
 }
 header .header-background {
+    position: absolute;
     width: 100%;
-    height: 400px;
+    height: 100%;
     background: rgba(0, 0, 0, .5);
 }
 header .header-title {
-    position: absolute;
-    bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    z-index: 1;
 }
 header .header-title p {
-    width: 100%;
-    max-width: 1920px;
     margin: 10px 0;
-    padding: 0 100px;
-    font-size: 2em;
+    padding: 0 0 0 100px;
+    font-size: 1.5em;
     color: white;
 }
 header .header-title p strong {
     font-size: 2em;
     font-weight: bolder;
 }
-header .button-wrapper {
-    position: absolute;
-    left: 50%;
-    bottom: 100px;
+header .header-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    max-width: 600px;
+    padding: 0 200px 0 0;
+    color: white;
+    z-index: 1;
+}
+header .header-description p {
+    margin: 5px 0;
+}
+header .header-description .button-wrapper {
+    margin-top: 20px;
+    text-align: center;
+}
+header .header-description .button-wrapper .button {
+    font-size: 1.5em;
 }
 
 main {
@@ -395,7 +397,7 @@ footer .copyright {
 
 
 /* Tablet */
-@media screen and (min-width: 720px) and (max-width: 1200px) {
+/*@media screen and (min-width: 720px) and (max-width: 1200px) {
     nav .nav-left .logo-wrapper {
         padding: 0;
         text-align: center;
@@ -527,9 +529,9 @@ footer .copyright {
     footer .footer-wrapper .contact-us {
         grid-column: 2 / 3;
     }
-}
+}*/
 /* Mobile */
-@media screen and (max-width: 720px) {
+/*@media screen and (max-width: 720px) {
     body {
         font-size: 7px;
     }
@@ -707,4 +709,4 @@ footer .copyright {
         padding: 50px 0;
         text-align: center;
     }
-}
+}*/
