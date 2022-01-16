@@ -36,11 +36,20 @@ a {
 .button.round {
     border-radius: 1em;
 }
+.button.sharp {
+    padding: .5em 1.6em;
+}
 .button.green {
     background-color: #1e9e6b;
 }
 .button.green:hover {
     background-color: #069059;
+}
+.button.blue {
+    background-color: #2185f5;
+}
+.button.blue:hover {
+    background-color: #1b65b9;
 }
 
 nav {
@@ -139,76 +148,83 @@ header .header-description .button-wrapper .button {
     font-size: 1.5em;
 }
 
-main {
+#main {
     width: 100%;
+    padding: 30px 0 50px 0;
 }
-main > section {
+#main .introduce {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
     max-width: 1200px;
     margin: 0 auto;
 }
-main .introduce {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px;
-}
-main .introduce .title-wrapper {
+#main .introduce .title-wrapper {
     display: grid;
     grid-template-columns: auto auto;
 }
-main .introduce .icon-list {
+#main .introduce .icon-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     margin: 0;
     padding: 0;
     list-style: none;
 }
-main .introduce .icon-list > li {
-    padding-top: 100px;
+#main .introduce .icon-list > li {
+    margin-bottom: 0;
+    padding-top: 110px;
+    padding-bottom: 18px;
     text-align: center;
     background-position-x: 50%;
     background-size: 100px;
     background-repeat: no-repeat;
 }
-main .introduce .performance-list > li {
+#main .introduce .performance-list > li {
+    height: 160px;
     padding: 0 !important;
     text-align: center;
 }
-main .introduce .performance-list > li .icon {
+#main .introduce .performance-list > li .icon {
     width: 100px;
-    height: 100px;
+    height: calc(50px + .5em);
     margin: 0 auto;
+    padding-top: calc(50px - .5em);
+    font-size: 2em;
+    color: #834979;
+    background-color: #EEE;
+    border-radius: 50px;
 }
-main .introduce .performance-list > li p {
-    
+#main .introduce .performance-list > li p {
+    margin: 10px 0 20px 0;
 }
-main .introduce .more-wrapper {
+#main .introduce .more-wrapper {
     text-align: center;
 }
-main .introduce .more-wrapper .button {
+#main .introduce .more-wrapper .button {
     font-size: 1.2em;
 }
-main .introduce .left .logo {
+#main .introduce .left .logo {
     width: 43em;
 }
-main .introduce .left .sub-title {
+#main .introduce .left .sub-title {
     color: #205DD0;
     font-size: 2em;
 }
-main .introduce .left .description {
+#main .introduce .left .description {
     font-size: 2em;
 }
-main .introduce .right {
+#main .introduce .right {
     grid-row: 1 / 3;
     grid-column: 2 / 3;
     overflow-x: auto;
 }
-main .introduce .right img {
+#main .introduce .right img {
     height: 400px;
 }
-main .benefits .right img {
+#main .benefits .right img {
     height: 300px;
 }
-main .slogan {
+#main .slogan {
     display: flex;
     justify-content: center;
     height: 27vw;
@@ -216,31 +232,31 @@ main .slogan {
     background: url(image/slogan_background.png);
     background-size: cover;
 }
-main .slogan .slogan-result {
+#main .slogan .slogan-result {
     align-self: center;
 }
-main .slogan .slogan-result img {
+#main .slogan .slogan-result img {
     height: 8em;
 }
-main .slogan .slogan-result p {
+#main .slogan .slogan-result p {
     margin: 20px 0;
     font-size: 4em;
     font-weight: bolder;
     color: white;
     text-align: center;
 }
-main .about {
+#main .about {
     display: grid;
     grid-template-columns: auto minmax(400px, auto);
     column-gap: 100px;
 }
-main .about .about-image {
+#main .about .about-image {
     overflow-x: auto;
 }
-main .about .about-image img {
+#main .about .about-image img {
     height: 400px;
 }
-main .about .location .location-item {
+#main .about .location .location-item {
     margin-bottom: 20px;
     padding: 10px 0 10px 70px;
     font-size: 1.5em;
@@ -252,52 +268,52 @@ main .about .location .location-item {
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
 }
-main .about .location .location-item p {
+#main .about .location .location-item p {
     margin: 0;
 }
-main .clients .title-wrapper {
+#main .clients .title-wrapper {
     margin-bottom: 5em;
 }
-main .clients .title-wrapper .title {
+#main .clients .title-wrapper .title {
     width: 27em;
 }
-main .clients .clients-list-wrapper {
+#main .clients .clients-list-wrapper {
     max-width: 1500px;
     margin: 0 auto;
 }
-main .clients .clients-list-wrapper .clients-list {
+#main .clients .clients-list-wrapper .clients-list {
     width: 100%;
 }
-main .product {
+#main .product {
     display: grid;
     grid-template-columns: auto minmax(400px, auto);
     column-gap: 50px;
 }
-main .product .product-image img {
+#main .product .product-image img {
     width: 100%;
 }
-main .product .product-information p {
+#main .product .product-information p {
     font-size: 1.5em;
 }
-main .product .product-information .products-image img {
+#main .product .product-information .products-image img {
     height: 15em;
 }
-main .news {
+#main .news {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
     padding: 100px;
 }
-main .news .title-wrapper {
+#main .news .title-wrapper {
     grid-row: 1;
     grid-column-start: 1;
     grid-column-end: 5;
     margin-bottom: 5em;
 }
-main .news .title-wrapper .title {
+#main .news .title-wrapper .title {
     width: 24em;
 }
-main .news .news-wrapper {
+#main .news .news-wrapper {
     display: grid;
     grid-row: 2;
     grid-column-start: 1;
@@ -308,73 +324,73 @@ main .news .news-wrapper {
     overflow: hidden;
     overflow-x: auto;
 }
-main .news .news-wrapper .news-item {
+#main .news .news-wrapper .news-item {
     grid-row: 1;
     width: 300px;
     margin: 20px;
 }
-main .news .news-wrapper .news-item .news-image img {
+#main .news .news-wrapper .news-item .news-image img {
     width: 300px;
 }
-main .news .news-wrapper .news-item .news-title {
+#main .news .news-wrapper .news-item .news-title {
     margin-top: 10px;
     font-size: 1.5em;
 }
-main .news .headline-wrapper {
+#main .news .headline-wrapper {
     grid-row: 2;
     grid-column-start: 4;
     grid-column-end: 5;
 }
-main .news .headline-row {
+#main .news .headline-row {
     display: grid;
     margin-bottom: 20px;
     grid-template-columns: 100px auto;
 }
-main .news .headline-row .date {
+#main .news .headline-row .date {
     height: 70px;
     padding-top: 30px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
 }
-main .news .headline-row .date .day {
+#main .news .headline-row .date .day {
     font-size: 2.5em;
     font-weight: bolder;
     color: #205DD0;
 }
-main .news .headline-row .date .month {
+#main .news .headline-row .date .month {
     font-size: 1.5em;
 }
-main .news .headline-row .headline-title {
+#main .news .headline-row .headline-title {
     margin-left: 30px;
     padding-top: 30px;
     font-size: 1.5em;
     border-bottom: 1px solid #aaa;
 }
-main .news .more-wrapper {
+#main .news .more-wrapper {
     margin: 50px 0;
     text-align: center;
     grid-row: 3;
     grid-column-start: 1;
     grid-column-end: 5;
 }
-main .recruit .image-row {
+#main .recruit .image-row {
     text-align: center;
 }
-main .recruit .recruit-image {
+#main .recruit .recruit-image {
     width: 100%;
     max-width: 1300px;
     margin: 50px auto;
 }
-main .recruit .recruit-image.small {
+#main .recruit .recruit-image.small {
     display: none;
 }
-main .recruit .recruit-about {
+#main .recruit .recruit-about {
     display: grid;
     grid-template-columns: 50% 50%;
     column-gap: 30px;
 }
-main .recruit .recruit-about .recruit-item {
+#main .recruit .recruit-about .recruit-item {
     margin-bottom: 20px;
     padding: 30px 30px 30px 100px;
     font-size: 2em;
@@ -386,10 +402,18 @@ main .recruit .recruit-about .recruit-item {
     border-radius: 10px;
     box-shadow: 0px 0px 10px #ccc;
 }
-main .recruit .recruit-about .recruit-item .recruit-header {
+#main .recruit .recruit-about .recruit-item .recruit-header {
     font-size: 1.1em;
     font-weight: bold;
     color: #205DD0;
+}
+
+#partners {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px 0 50px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
 }
 
 footer {
@@ -397,34 +421,30 @@ footer {
     color: white;
     background-color: #0D2450;
 }
-footer .title {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    font-weight: bold;
-}
-footer .row {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
 footer .footer-wrapper {
     display: grid;
-    grid-template-columns: 60% auto auto;
-    max-width: 1920px;
+    grid-template-columns: 300px 100px auto;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer .logo p {
+    margin: 0;
+    font-size: 2.5em;
+    font-weight: bolder;
+}
+footer .title {
+    margin: 0 0 20px 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+footer p {
     margin: 10px 0;
-    padding: 50px 100px;
-}
-footer .footer-wrapper .logo {
-    grid-column: 1 / 2;
-}
-footer .footer-wrapper .links {
-    grid-column: 2 / 3;
-}
-footer .footer-wrapper .contact-us {
-    grid-column: 3 / 4;
 }
 footer .copyright {
-    font-size: 1.5em;
+    margin-top: 50px;
     text-align: center;
+    color: rgb(147, 160, 185);
 }
 
 
@@ -479,70 +499,70 @@ footer .copyright {
         bottom: 50px;
     }
 
-    main .introduce {
+    #main .introduce {
         grid-template-columns: auto;
     }
-    main .introduce .right {
+    #main .introduce .right {
         grid-row: 3 / 4;
         grid-column: 1 / 2;
         margin-top: 30px;
     }
-    main .introduce .right img {
+    #main .introduce .right img {
         height: 300px;
     }
-    main .slogan {
+    #main .slogan {
         height: 50vw;
     }
-    main .slogan .slogan-result img {
+    #main .slogan .slogan-result img {
         height: 5em;
     }
-    main .slogan .slogan-result p {
+    #main .slogan .slogan-result p {
         margin: 10px 0;
         font-size: 3em;
     }
-    main .about {
+    #main .about {
         display: block;
     }
-    main .about .location .location-item {
+    #main .about .location .location-item {
         font-size: 1.7em;
     }
-    main .news {
+    #main .news {
         display: block;
     }
-    main .news .news-wrapper {
+    #main .news .news-wrapper {
         display: block;
         padding: 0;
         box-shadow: none;
         overflow: visible;
     }
-    main .news .news-wrapper .news-item {
+    #main .news .news-wrapper .news-item {
         width: auto;
         margin: 20px auto;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0px 0px 20px #ccc;
     }
-    main .news .news-wrapper .news-item .news-image {
+    #main .news .news-wrapper .news-item .news-image {
         text-align: center;
     }
-    main .news .news-wrapper .news-item .news-image img {
+    #main .news .news-wrapper .news-item .news-image img {
         width: auto;
         max-width: 200px;
     }
-    main .news .news-wrapper .news-item .news-title {
+    #main .news .news-wrapper .news-item .news-title {
         margin-top: 20px;
         font-size: 2em;
     }
-    main .news .headline-wrapper {
+    #main .news .headline-wrapper {
         font-size: 1.2em;
     }
-    main .product {
+    #main .product {
         display: block;
     }
-    main .product .product-information p {
+    #main .product .product-information p {
         font-size: 1.7em;
     }
-    main .recruit .recruit-about .recruit-item {
+    #main .recruit .recruit-about .recruit-item {
         padding-left: 50px;
         background-size: 1em;
         background-position-x: 20px;
@@ -645,86 +665,86 @@ footer .copyright {
         width: 10px;
     }
 
-    main > section {
+    #main > section {
         padding: 20px 30px !important;
     }
-    main .introduce {
+    #main .introduce {
         grid-template-columns: auto;
     }
-    main .introduce .left .logo {
+    #main .introduce .left .logo {
         width: 30em;
     }
-    main .introduce .right {
+    #main .introduce .right {
         grid-row: 3 / 4;
         grid-column: 1 / 2;
         margin-top: 30px;
     }
-    main .introduce .right img {
+    #main .introduce .right img {
         height: 200px;
     }
-    main .introduce .right.prefer img {
+    #main .introduce .right.prefer img {
         height: 300px;
     }
-    main .slogan .slogan-result img {
+    #main .slogan .slogan-result img {
         height: 5em;
     }
-    main .slogan .slogan-result p {
+    #main .slogan .slogan-result p {
         margin: 10px 0;
         font-size: 3em;
     }
-    main .about {
+    #main .about {
         display: block;
     }
-    main .about .about-image img {
+    #main .about .about-image img {
         height: 200px;
     }
-    main .product {
+    #main .product {
         display: block;
     }
-    main .news {
+    #main .news {
         display: block;
     }
-    main .news .news-wrapper {
+    #main .news .news-wrapper {
         display: block;
         padding: 0;
         box-shadow: none;
         overflow: visible;
     }
-    main .news .news-wrapper .news-item {
+    #main .news .news-wrapper .news-item {
         width: auto;
         margin: 20px auto;
         padding: 30px;
         border-radius: 10px;
         box-shadow: 0px 0px 20px #ccc;
     }
-    main .news .news-wrapper .news-item .news-image {
+    #main .news .news-wrapper .news-item .news-image {
         text-align: center;
     }
-    main .news .news-wrapper .news-item .news-image img {
+    #main .news .news-wrapper .news-item .news-image img {
         width: auto;
         max-width: 200px;
     }
-    main .news .news-wrapper .news-item .news-title {
+    #main .news .news-wrapper .news-item .news-title {
         margin-top: 20px;
         font-size: 2em;
     }
-    main .news .headline-wrapper {
+    #main .news .headline-wrapper {
         font-size: 1.2em;
     }
-    main .recruit .recruit-image {
+    #main .recruit .recruit-image {
         margin: 30px auto;
     }
-    main .recruit .recruit-image.large {
+    #main .recruit .recruit-image.large {
         display: none;
     }
-    main .recruit .recruit-image.small {
+    #main .recruit .recruit-image.small {
         display: inline-block;
         max-width: 400px;
     }
-    main .recruit .recruit-about {
+    #main .recruit .recruit-about {
         display: block;
     }
-    main .recruit .recruit-about .recruit-item {
+    #main .recruit .recruit-about .recruit-item {
         padding-left: 50px;
         background-size: 1em;
         background-position-x: 20px;
