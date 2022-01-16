@@ -30,9 +30,11 @@ a {
 
 .button {
     display: inline-block;
-    padding: 15px 30px;
+    padding: .8em 1.6em;
     color: white;
-    border-radius: 10px;
+}
+.button.round {
+    border-radius: 1em;
 }
 .button.green {
     background-color: #1e9e6b;
@@ -104,15 +106,17 @@ header .header-title {
     margin-bottom: 50px;
     z-index: 1;
 }
-header .header-title p {
+header .header-title p,
+header .header-title h1 {
     margin: 10px 0;
     padding: 0 0 0 100px;
     font-size: 1.5em;
     color: white;
 }
-header .header-title p strong {
+header .header-title h1 {
     font-size: 2em;
     font-weight: bolder;
+    text-align: center;
 }
 header .header-description {
     display: flex;
@@ -139,21 +143,49 @@ main {
     width: 100%;
 }
 main > section {
-    max-width: 1920px;
-    margin: 10px 0;
-    padding: 50px 100px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 main .introduce {
     display: grid;
-    grid-template-columns: 450px auto;
-    column-gap: 100px;
-    padding: 100px;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 main .introduce .title-wrapper {
-    margin-bottom: 5em;
+    display: grid;
+    grid-template-columns: auto auto;
 }
-main .introduce .title-wrapper .title {
-    width: 24em;
+main .introduce .icon-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+main .introduce .icon-list > li {
+    padding-top: 100px;
+    text-align: center;
+    background-position-x: 50%;
+    background-size: 100px;
+    background-repeat: no-repeat;
+}
+main .introduce .performance-list > li {
+    padding: 0 !important;
+    text-align: center;
+}
+main .introduce .performance-list > li .icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+main .introduce .performance-list > li p {
+    
+}
+main .introduce .more-wrapper {
+    text-align: center;
+}
+main .introduce .more-wrapper .button {
+    font-size: 1.2em;
 }
 main .introduce .left .logo {
     width: 43em;
