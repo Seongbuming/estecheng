@@ -306,6 +306,14 @@ main.layout-2 {
     align-content: center;
 }
 
+#content .map {
+    width: 640px;
+    margin: 0 auto;
+}
+#content .contact {
+    width: 640px;
+    margin: 30px auto 0 auto;
+}
 
 #partners {
     max-width: 1200px;
