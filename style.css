@@ -196,8 +196,26 @@ main.layout-2 {
 
 #content {
     width: 100%;
-    padding: 30px 0 50px 0;
+    padding: 0 0 50px 0;
 }
+#content h1 {
+    margin: 50px 0 30px 0;
+}
+#content h2 {
+    margin: 30px 0;
+}
+#content .summary {
+    margin: 20px 0;
+    padding: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #efefef;
+}
+#content .summary .red {
+    font-weight: bold;
+    color: red;
+}
+
 #content .introduce {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -270,9 +288,6 @@ main.layout-2 {
 #content .about {
     padding: 0 200px;
 }
-#content .about h2 {
-    margin: 30px 0;
-}
 #content .about p {
     margin: 20px 0;
 }
@@ -313,6 +328,13 @@ main.layout-2 {
 #content .contact {
     width: 640px;
     margin: 30px auto 0 auto;
+}
+
+#content .business .business-image-wrapper {
+    text-align: center;
+}
+#content .business .business-image-wrapper img {
+    max-width: 100%;
 }
 
 #partners {
