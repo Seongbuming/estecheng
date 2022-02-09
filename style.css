@@ -7,6 +7,9 @@ html, body {
     color: #555;
 }
 
+* {
+    max-width: 100%;
+}
 a {
     color: inherit;
     text-decoration: none;
@@ -202,7 +205,10 @@ main.layout-2 {
     margin: 50px 0 30px 0;
 }
 #content h2 {
-    margin: 30px 0;
+    margin: 40px 0 30px 0;
+}
+#content h3 {
+    margin: 20px 0 10px 0;
 }
 #content .summary {
     margin: 20px 0;
@@ -333,8 +339,63 @@ main.layout-2 {
 #content .business .business-image-wrapper {
     text-align: center;
 }
-#content .business .business-image-wrapper img {
-    max-width: 100%;
+#content .business .performance-list {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+}
+#content .business .performance-list > li {
+    padding: 0 !important;
+    font-weight: bold;
+    text-align: center;
+}
+#content .business .performance-list > li .icon {
+    font-size: 3em;
+    color: #834979;
+}
+#content .business .business-contact {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: unset;
+}
+#content .business-detail .features {
+    padding-left: 1em;
+    list-style-type: '>';
+}
+#content .business-detail .features > li {
+    padding-left: 1em;
+}
+#content .business-detail .features > li p {
+    margin: 10px 0;
+}
+#content .business-detail .business-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+#content .business-detail .process {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+#content .business-detail .process > li {
+    margin: 15px 10px;
+    padding: 10px 10px 10px 180px;
+    background-repeat: no-repeat;
+    background-size: 160px;
+    background-position: 10px center;
+    box-shadow: 0 0 7px gainsboro;
+}
+#content .business-detail .process .design {
+    background-image: url(image/design.png);
+}
+#content .business-detail .process .install {
+    background-image: url(image/install.png);
+}
+#content .business-detail .process .maint {
+    background-image: url(image/maint.png);
 }
 
 #partners {
