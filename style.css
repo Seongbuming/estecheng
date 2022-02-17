@@ -202,10 +202,10 @@ main.layout-2 {
     padding: 0 0 50px 0;
 }
 #content h1 {
-    margin: 50px 0 30px 0;
+    margin: 50px 0 50px 0;
 }
 #content h2 {
-    margin: 40px 0 30px 0;
+    margin: 50px 0 30px 0;
 }
 #content h3 {
     margin: 20px 0 10px 0;
@@ -346,14 +346,32 @@ main.layout-2 {
     grid-template-columns: 1fr 1fr 1fr;
     list-style: none;
 }
+#content .business .performance-list.gap {
+    grid-gap: 20px;
+}
 #content .business .performance-list > li {
-    padding: 0 !important;
+    padding: 0;
     font-weight: bold;
     text-align: center;
+}
+#content .business .performance-list.border > li {
+    padding: 20px 10px;
+    border: 1px solid #eee;
+    border-radius: 10px;
 }
 #content .business .performance-list > li .icon {
     font-size: 3em;
     color: #834979;
+}
+#content .business .performance-list > li .header {
+    font-size: 1.5em;
+    color: #834979;
+}
+#content .business .performance-list > li .desc {
+    margin-bottom: 0;
+    font-weight: normal;
+    font-size: 1.1em;
+    word-break: keep-all;
 }
 #content .business .business-contact {
     border-top: 1px solid #ccc;
@@ -374,6 +392,10 @@ main.layout-2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
+}
+#content .business-detail .business-grid > div {
+    align-self: center;
+    line-height: 1.6;
 }
 #content .business-detail .process {
     margin: 0;
