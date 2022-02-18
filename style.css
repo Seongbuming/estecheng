@@ -193,7 +193,11 @@ main.layout-2 {
     padding: 10px 0 10px 20px;
     border-bottom: 1px solid #ddd;
 }
+#sidebar .menu > li.active {
+    border-left: 5px solid #59606c;
+}
 #sidebar .menu > li.active a {
+    padding-left: 15px;
     font-weight: bolder;
 }
 
@@ -393,9 +397,13 @@ main.layout-2 {
     grid-template-columns: 1fr 2fr;
     gap: 20px;
 }
+#content .business-detail .business-grid.large {
+    grid-template-columns: 2fr 1fr;
+}
 #content .business-detail .business-grid > div {
     align-self: center;
     line-height: 1.6;
+    word-break: keep-all;
 }
 #content .business-detail .process {
     margin: 0;
