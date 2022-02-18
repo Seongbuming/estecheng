@@ -356,7 +356,7 @@ main.layout-2 {
 }
 #content .business .performance-list.border > li {
     padding: 20px 10px;
-    border: 1px solid #eee;
+    border: 2px solid #eee;
     border-radius: 10px;
 }
 #content .business .performance-list > li .icon {
