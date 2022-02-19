@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+
+    <link rel="stylesheet" id="google-typography-font-css" href="//fonts.googleapis.com/css?family=Nanum+Gothic:normal" type="text/css" media="all">
+    <script src="../js/jquery-3.6.0.min.js"></script>
+
+    <title>내진성능평가 및 보강공법 - 이에스텍</title>
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <a class="logo-wrapper" href="../">
+                <img src="../image/logo.png" title="이에스텍 로고" />
+            </a>
+        </div>
+        <div class="nav-right">
+            <div class="menu-button">
+                <img src="../image/menu.png" />
+            </div>
+            <ul class="menu-wrapper">
+                <li><a href="../overview">회사소개</a></li>
+                <li><a href="../business">사업영역</a></li>
+                <li><a href="../performance">사업실적</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="subpage">
+        <div class="header-background">
+        </div>
+        <div class="header-title">
+            <p>안전·재난 관리 선도기업</p>
+            <p>기술자문·연구개발 전문기업</p>
+            <h1>ES TECH ENG</h1>
+        </div>
+    </header>
+
+    <main class="layout-2">
+        <div id="sidebar">
+            <div class="sidebar-header">사업영역</div>
+            <ul class="menu">
+                <li><a href="../business">개요</a></li>
+                <li><a href="../business/1.html">지진가속도계측기 신규구축</a></li>
+                <li><a href="../business/2.html">지진가속도계측기 유지보수</a></li>
+                <li><a href="../business/3.html">면진테이블</a></li>
+                <li class="active"><a href="../business/4.html">내진성능평가 및 보강공법</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <h1>면진테이블</h1>
+
+            <section class="business">
+                <div class="summary business-contact">
+                    <p style="font-size: 1.3em; line-height: 1.5;">
+                        대한민국도 지진 안전지대가 아닙니다.<br>
+                        건축물의 내진성능평가와 그에 따른 보강도<br>
+                        이에스텍이 도와드리겠습니다.
+                    </p>
+                    <div class="button-wrapper">
+                        <a class="button green round" href="../overview/contact.html">문의하기</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="business-detail">
+                <h2 style="text-align: center;">내진성능평가 절차</h2>
+                <div class="test-process">
+                    <div style="text-align: center;">
+                        <img src="../image/seismic_perf_stepa_fig_1_trans_r2.png" />
+                    </div>
+                    <div>
+                        <div class="collapsible">
+                            <div class="title">
+                                <h3>예비평가</h3>
+                            </div>
+                            <div class="result">
+                                <ol>
+                                    <li>정형건물만이 예비평가 대상 (비정형 건물은 상세평가 실시)</li>
+                                    <li>시설안전공단에서 제시한 수식 적용</li>
+                                    <li>건물의 층별 성능 (Capacity) 산정</li>
+                                    <li>건물의 층별 요구치 (Demand) 산정</li>
+                                    <li>성능수준은 DCR= Demand/Capacity의 비에 따라 판정</li>
+                                </ol>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>성능수준</th>
+                                            <th>DCR의 범위</th>
+                                            <th>비고</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>거주가능 (IO)</td>
+                                            <td>DCR ≤ 0.5</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>인명안전 (LS)</td>
+                                            <td>0.5 ＜ DCR ≤ 0.75</td>
+                                            <td>관공서</td>
+                                        </tr>
+                                        <tr>
+                                            <td>붕괴방지 (CP)</td>
+                                            <td>0.75 ＜ DCR ≤ 1.0</td>
+                                            <td></td>
+                                        </tr>
+                                        <tr>
+                                            <td>붕괴 (C)</td>
+                                            <td>1.0 ＜ DCR</td>
+                                            <td></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="collapsible">
+                            <div class="title">
+                                <h3>상세평가 1단계</h3>
+                            </div>
+                            <div class="result">
+                                <ol>
+                                    <li>해석모델을 이용한 선형 (탄성)해석 실시</li>
+                                    <li>부재별 성능수준과 층별 성능수준을 바탕으로 전체 구조물 성능수준 판정</li>
+                                    <li>성능수준의 판정</li>
+                                </ol>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>성능수준</th>
+                                            <th>판정기준</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>거주가능 (IO)</td>
+                                            <td>부재별 성능수준이 즉시거주인 부재가 연직하중 분담률 80% 이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td>인명안전 (LS)</td>
+                                            <td>부재별 성능수준이 인명안전, 즉시거주인 부재가 부담하는 연직하중 분담률 80% 이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td>붕괴방지 (CP)</td>
+                                            <td>부재별 성능수준이 붕괴방지, 인명안전, 즉시거주인 부재가 부담하는 연직하중 분담률 80% 이상</td>
+                                        </tr>
+                                        <tr>
+                                            <td>붕괴 (C)</td>
+                                            <td>부재별 성능수준이 붕괴위험인 부재가 부담하는 연직하중 분담률 80% 이상</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="collapsible">
+                            <div class="title">
+                                <h3>상세평가 2단계</h3>
+                            </div>
+                            <div class="result">
+                                <ol>
+                                    <li>해석모델을 이용한 비선형 해석 실시</li>
+                                    <li>성능점 (performance point)산정</li>
+                                    <li>성능점에서의 부재별 성능수준과 층별 성능수준을 바탕으로 전체 구조물 성능수준 판정</li>
+                                    <li>성능수준의 판정은 1단계 성능평가방법과 동일</li>
+                                </ol>
+                                <div style="text-align: center;">
+                                    <img src="../image/seismic_perf_step3_fig_1.png" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapsible">
+                            <div class="title">
+                                <h3>내진성능 향상</h3>
+                            </div>
+                            <div class="result">
+                                <ol>
+                                    <li>최소 보강개소를 적용하여 상세평가 2단계 실시</li>
+                                    <li>목표성능 (인명안전) 만족 시 종료</li>
+                                    <li>목표성능 미 만족시 보강개소를 증가시켜 상세평가 2단계 실시</li>
+                                    <li>목표성능을 만족할 때까지 해석 반복 수행</li>
+                                </ol>
+                                <div style="text-align: center;">
+                                    <img src="../image/seismic_perf_step4_fig_1.png" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="business-detail">
+                <h2 style="text-align: center;">이에스텍 면진테이블 특장점</h2>
+                <ul class="features grid" style="grid-template-columns: 1fr 1fr;">
+                    <li style="grid-row: 1 / 3;">
+                        <h3>경제성 및 품질확보</h3>
+                        <ul>
+                            <li>공장생산->현장설치로 시공성 우수</li>
+                            <li>수업중단 없이 연중공사 가능</li>
+                            <li>다양한 마감재 사용가능<br>(외장리모델링의 제약이 없음)</li>
+                            <li>기존외관의 변화가 거의 없음</li>
+                            <li>건설폐기물 최소화</li>
+                            <li>일반건물관리 외 유지보수관리비용 無</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>구조안전·효율성</h3>
+                        <ul>
+                            <li>모재와 동일한 물성치</li>
+                            <li>기술인증으로 검증된 적합 공법</li>
+                            <li>PC 전단벽은 기존강성의 약 10배</li>
+                            <li>취성거동특성을 고려한 내진보강</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>시공성 및 친환경성</h3>
+                        <ul>
+                            <li>단순 접합공정으로 현장품질 확보용이</li>
+                            <li>공기 및 공사 비용 절감</li>
+                            <li>수입 대체 효과</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-wrapper">
+            <div class="logo">
+                <p>ES-TECH ENG</p>
+            </div>
+            <div class="links">
+                <h2 class="title">Links</h2>
+                <p><a href="../overview">회사소개</a></p>
+                <p><a href="../business">사업영역</a></p>
+                <p><a href="../performance">사업실적</a></p>
+            </div>
+            <div class="contact-us">
+                <h2 class="title">Contact us</h2>
+                <p>주소: 경기도 화성시 동탄첨단산업1로 27 A동 515호, 516호<br>(영천동, 금강펜테리움IX타워)</p>
+                <p>메일: contact@este.co.kr</p>
+                <p>전화: 070-4322-4747</p>
+                <p>팩스: 070-4322-4730</p>
+            </div>
+        </div>
+        <div class="copyright">© ES-TECH ENG Corp.</div>
+    </footer>
+
+    <script>
+        $('.collapsible .title').click(function() {
+            const $collapsible = $(this).parent('.collapsible');
+            if ($collapsible.hasClass('active')) {
+                $collapsible.removeClass('active');
+                $(this).siblings('.result').slideUp();
+            } else {
+                $collapsible.addClass('active');
+                $(this).siblings('.result').slideDown();
+            }
+        });
+    </script>
+</body>
+</html>
